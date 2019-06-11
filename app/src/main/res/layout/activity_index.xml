@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hangzhou.love.lovemyself.view.IndexActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--头部-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="#132549"
+            android:shape="rectangle">
+
+            <LinearLayout
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:text=" 杭州"
+                    android:textColor="#f2f0ec"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=" 多云 26"
+                    android:textColor="#f2f0ec"
+                    android:textSize="8sp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:maxLines="1"
+                android:gravity="center"
+                android:text="你要对好点，也别忘对自己狠点"
+                android:textSize="11sp"
+                android:textColor="#fff"
+                android:layout_weight="1"
+                />
+            <ImageView
+                android:layout_width="49dp"
+                android:layout_height="29dp"
+                android:layout_margin="10dp"
+                android:id="@+id/imgLeft"
+                android:src="@drawable/app" />
+
+        </LinearLayout>
+        <!--个人信息-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="136dp"
+            android:id="@+id/layMain"
+            android:orientation="vertical">
+            <!--图像加努力语录-->
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="75dp"
+               android:orientation="horizontal">
+
+               <ImageView
+                   android:layout_width="74dp"
+                   android:layout_height="70dp"
+                   android:layout_margin="5dp"
+                   android:id="@+id/imgMainLeft"
+                   android:src="@drawable/app" />
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:orientation="vertical">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_weight="1"
+                       android:orientation="horizontal">
+
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:orientation="vertical"
+                          android:padding="5dp"
+                          android:layout_weight="1">
+
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="match_parent"
+                              android:layout_weight="1"
+                              android:gravity="center"
+                              android:typeface="monospace"
+                              android:text="张鹏程"
+                              android:textColor="#0e0e0e"
+                              android:textStyle="bold"
+                              android:textSize="16sp" />
+
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="30dp"
+                              android:layout_weight="1"
+                              android:gravity="center"
+                              android:text=" 努力做一个优秀的人"
+                              android:textColor="#a3a2a2"
+                              android:textSize="10sp" />
+
+                      </LinearLayout>
+
+                       <ImageView
+                           android:layout_width="16dp"
+                           android:layout_height="16dp"
+                           android:layout_margin="10dp"
+                           android:layout_gravity="center"
+                           android:src="@drawable/app" />
+
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="2dp"
+                       android:background="#f4f4f4"
+                       android:orientation="horizontal">
+
+                   </LinearLayout>
+
+               </LinearLayout>
+           </LinearLayout>
+            <!--你的年龄-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_marginLeft="37dp"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginBottom="17dp"
+                    android:src="@drawable/app" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=" 你37.96015268岁了"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="#0e0e0e"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/app" />
+            </LinearLayout>
+        </LinearLayout>
+        <!--生命进度条-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:orientation="horizontal"
+            android:id="@+id/ll_life">
+            <LinearLayout
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="#818181"/>
+            <LinearLayout
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:background="#FF4081"/>
+            <LinearLayout
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="#818181"/>
+
+
+
+        </LinearLayout>
+        <!--要做的详情事项-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="#F2f0ec"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:text="剩下的日子，你大概还可以"
+                    android:textColor="#818181"
+                    android:textSize="8sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8"
+                android:orientation="horizontal">
+                <LinearLayout
+                   android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:background="#969696"/>
+                <LinearLayout
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="9dp"
+                        android:text="吃305645顿饭"
+                        android:textSize="9sp"
+                        android:gravity="center"
+                        android:layout_margin="10dp"
+                        android:textColor="#555555"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="9dp"
+                        android:text="度过17001周末"
+                        android:layout_margin="10dp"
+                        android:textSize="9sp"
+                        android:textColor="#555555"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:background="#969696"/>
+                <LinearLayout
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="9dp"
+                        android:text="吃305645顿饭"
+                        android:textSize="9sp"
+                        android:gravity="center"
+                        android:layout_margin="10dp"
+                        android:textColor="#555555"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="9dp"
+                        android:text="度过17001周末"
+                        android:layout_margin="10dp"
+                        android:textSize="9sp"
+                        android:textColor="#555555"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:background="#969696"/>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--小细线-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:orientation="horizontal"
+            android:id="@+id/ll_xian">
+            <LinearLayout
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="#818181"/>
+            <LinearLayout
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:background="#FF4081"/>
+            <LinearLayout
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="#818181"/>
+
+
+
+        </LinearLayout>
+        <!--体重信息-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textColor="#b7b6b6"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="今日步数"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="4195步"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textColor="#b7b6b6"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="睡眠小时"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="9.6h"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textColor="#b7b6b6"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="身体"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="70.0kg"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textColor="#b7b6b6"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="生理期"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="18号"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textColor="#b7b6b6"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="生命力"/>
+
+               <!-- <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="4195步"/>-->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/app"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--加载原生页面-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#f2f0ec">
+
+        </LinearLayout>
+        <!--底部标签-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:text="至亲至爱"/>
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:background="@color/colorPrimary"></LinearLayout>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:text="至亲至爱"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:text="至亲至爱"/>
+
+                    <ImageView
+                        android:background="@drawable/set_selector"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/app"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:background="#4fe3c3"
+                        android:textColor="#ffffff"
+                        android:text="爱自己"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
